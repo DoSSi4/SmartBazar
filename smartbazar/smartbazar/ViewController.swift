@@ -31,7 +31,7 @@ class ViewController: UIViewController, UITabBarDelegate{
             webview.load(URLRequest(url: URL(string: "https://smartbazar.kz")!))
         }
         else if (item.tag == 2){
-            
+            webview.load(URLRequest(url: URL(string: "https://smartbazar.kz/products/75")!))
             
         }
         else if (item.tag == 3){
@@ -41,7 +41,7 @@ class ViewController: UIViewController, UITabBarDelegate{
             webview.load(URLRequest(url: URL(string: "https://smartbazar.kz/products/92")!))
         }
         else if (item.tag == 5){
-            webview.load(URLRequest(url: URL(string: "https://smartbazar.kz/products/74")!))
+            webview.load(URLRequest(url: URL(string: "https://smartbazar.kz/products/73")!))
         }
         }
     

@@ -16,10 +16,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WSE-nk-xrG" userLabel="tabbar">
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IqY-3Z-LiV">
+                                <rect key="frame" x="0.0" y="39" width="414" height="774"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WSE-nk-xrG" userLabel="tabbar">
                                 <rect key="frame" x="0.0" y="813" width="414" height="49"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="PnM-TZ-xQc"/>
+                                </constraints>
                                 <items>
                                     <tabBarItem tag="1" title="Главная" image="house" catalog="system" id="C8V-db-6ta"/>
                                     <tabBarItem tag="2" title="Каталог" image="magnifyingglass" catalog="system" id="URa-9G-uQx"/>
@@ -31,18 +41,19 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="so5-DC-e31"/>
                                 </connections>
                             </tabBar>
-                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IqY-3Z-LiV">
-                                <rect key="frame" x="0.0" y="39" width="414" height="774"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <wkWebViewConfiguration key="configuration">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
-                                </wkWebViewConfiguration>
-                            </wkWebView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="WSE-nk-xrG" secondAttribute="trailing" id="3kF-Qk-mfn"/>
+                            <constraint firstItem="WSE-nk-xrG" firstAttribute="top" secondItem="IqY-3Z-LiV" secondAttribute="bottom" id="8Hp-53-6B7"/>
+                            <constraint firstItem="WSE-nk-xrG" firstAttribute="trailing" secondItem="IqY-3Z-LiV" secondAttribute="trailing" id="PQ2-nX-fYv"/>
+                            <constraint firstItem="WSE-nk-xrG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="TuU-wW-ffq"/>
+                            <constraint firstItem="WSE-nk-xrG" firstAttribute="leading" secondItem="IqY-3Z-LiV" secondAttribute="leading" id="ecV-FM-e7x"/>
+                            <constraint firstItem="IqY-3Z-LiV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-5" id="t6d-EC-6tg"/>
+                            <constraint firstItem="WSE-nk-xrG" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="v2F-ND-aG1"/>
+                            <constraint firstItem="WSE-nk-xrG" firstAttribute="top" secondItem="IqY-3Z-LiV" secondAttribute="bottom" id="w3G-sl-asQ"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="tabBar" destination="WSE-nk-xrG" id="5Uv-Fb-Rv8"/>
@@ -51,7 +62,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="76.339285714285708"/>
+            <point key="canvasLocation" x="18.840579710144929" y="316.07142857142856"/>
         </scene>
     </scenes>
     <color key="tintColor" red="0.72941178080000002" green="0.26666668059999998" blue="0.34901961679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
