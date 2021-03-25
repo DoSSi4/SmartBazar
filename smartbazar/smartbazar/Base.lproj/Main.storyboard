@@ -16,12 +16,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IqY-3Z-LiV">
+                            <wkWebView clipsSubviews="YES" contentMode="scaleToFill" allowsBackForwardNavigationGestures="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IqY-3Z-LiV">
                                 <rect key="frame" x="0.0" y="39" width="414" height="774"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
+                                    <wkPreferences key="preferences" javaScriptCanOpenWindowsAutomatically="YES"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
                             <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WSE-nk-xrG" userLabel="tabbar">
@@ -35,7 +35,7 @@
                                     <tabBarItem tag="2" title="Каталог" image="magnifyingglass" catalog="system" id="URa-9G-uQx"/>
                                     <tabBarItem tag="3" title="Избранное" image="suit.heart" catalog="system" id="6gq-2O-BTq"/>
                                     <tabBarItem tag="4" title="Корзина" image="cart" catalog="system" id="bL8-qX-6dx"/>
-                                    <tabBarItem tag="5" title="Заказы" image="list.dash" catalog="system" id="Rex-VM-w6d"/>
+                                    <tabBarItem tag="5" title="Профиль" image="list.dash" catalog="system" id="Rex-VM-w6d"/>
                                 </items>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="so5-DC-e31"/>
@@ -65,7 +65,7 @@
             <point key="canvasLocation" x="18.840579710144929" y="316.07142857142856"/>
         </scene>
     </scenes>
-    <color key="tintColor" red="0.72941178080000002" green="0.26666668059999998" blue="0.34901961679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+    <color key="tintColor" red="0.36470589040000001" green="0.59215688710000003" blue="0.2117646933" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
     <resources>
         <image name="cart" catalog="system" width="128" height="102"/>
         <image name="house" catalog="system" width="128" height="106"/>
